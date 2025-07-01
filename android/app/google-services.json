@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "50667679596",
+    "project_id": "mypends",
+    "storage_bucket": "mypends.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:50667679596:android:a9de7d73178d47ceeb8d49",
+        "android_client_info": {
+          "package_name": "com.alencar.app_pendencias"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "50667679596-m38glh3kek3ns4dk77npno4he6tdtu42.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.alencar.app_pendencias",
+            "certificate_hash": "fbaa03f07f14a0be9f289cdc0c741299cec638a9"
+          }
+        },
+        {
+          "client_id": "50667679596-ruth044kd4mht2hgh46p8altutt30uin.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2Hu7MrTxxbJ1GrPnpc98wcP3yFqFWN0c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "50667679596-ruth044kd4mht2hgh46p8altutt30uin.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

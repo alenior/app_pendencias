@@ -1,3 +1,20 @@
+buildscript {
+    dependencies {
+        classpath("com.google.gms:google-services:4.4.1")
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+plugins {
+    // Importante para projetos Kotlin modernos
+    id("com.android.application") version "8.2.2" apply false
+    id("com.android.library") version "8.2.2" apply false
+    id("org.jetbrains.kotlin.android") version "1.9.22" apply false
+}
+
 allprojects {
     repositories {
         google()
@@ -5,6 +22,7 @@ allprojects {
     }
 }
 
+// Configuração de diretórios personalizados (opcional)
 val newBuildDir: Directory =
     rootProject.layout.buildDirectory
         .dir("../../build")
@@ -14,8 +32,6 @@ rootProject.layout.buildDirectory.value(newBuildDir)
 subprojects {
     val newSubprojectBuildDir: Directory = newBuildDir.dir(project.name)
     project.layout.buildDirectory.value(newSubprojectBuildDir)
-}
-subprojects {
     project.evaluationDependsOn(":app")
 }
 
