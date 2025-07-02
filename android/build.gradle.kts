@@ -8,13 +8,6 @@ buildscript {
     }
 }
 
-plugins {
-    // Importante para projetos Kotlin modernos
-    id("com.android.application") version "8.2.2" apply false
-    id("com.android.library") version "8.2.2" apply false
-    id("org.jetbrains.kotlin.android") version "1.9.22" apply false
-}
-
 allprojects {
     repositories {
         google()
@@ -22,7 +15,7 @@ allprojects {
     }
 }
 
-// Configuração de diretórios personalizados (opcional)
+// Diretório de build customizado (opcional, pode manter se quiser)
 val newBuildDir: Directory =
     rootProject.layout.buildDirectory
         .dir("../../build")

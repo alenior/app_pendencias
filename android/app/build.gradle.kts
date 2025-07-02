@@ -20,7 +20,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.app_pendencias"
+        applicationId = "com.alencar.app_pendencias"
         minSdk = 23  // Correto para o Firebase
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode

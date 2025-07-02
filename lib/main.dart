@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_app_check/firebase_app_check.dart';
 import 'package:app_pendencias/services/auth_service.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
+
+  await FirebaseAppCheck.instance.activate(
+    //webRecaptchaSiteKey: 'SEU_SITE_KEY_AQUI', // Para web (ignorar em Android/iOS)
+    androidProvider: AndroidProvider.debug,   // Usando modo debug para Android
+  );
+
   runApp(MyApp());
 }
 
